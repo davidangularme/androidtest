@@ -13,7 +13,7 @@ class YoutubeRepository(private val youtubeApi: YoutubeApi) {
     suspend fun searchVideos(apiKey: String, query: String): List<YoutubeVideo>? {
         val response = youtubeApi.searchVideos(apiKey, query)
         if (response.isSuccessful) {
-            return response.body()?.items
+            return response.body().items
         }
         return null
     }

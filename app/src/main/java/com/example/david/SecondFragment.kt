@@ -20,12 +20,6 @@ class SecondFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        // Initialize your UI components or perform any other setup here
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

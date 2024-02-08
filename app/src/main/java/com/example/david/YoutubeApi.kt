@@ -13,5 +13,5 @@ interface YoutubeApi {
         @Query("maxResults") maxResults: Int = 20
     ): Response<YoutubeSearchResponse>
 
-    abstract fun searchVideos(apiKey: String, part: String): Any
+    fun searchVideos(apiKey: String, part: String): Any
 }
